@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body .mainWindow {
+  width: 70vw;
+  height: 70vh;
+  margin-left: 15vw;
+  margin-top: 15vh;
+  border: 1px solid black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 100;
+}
+
+body .mainWindow .mainWindowHeader {
+  width: 100%;
+  height: 7%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.521);
+}
+
+body .mainWindow .mainWindowHeader .leftSide {
+  float: left;
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .mainWindow .mainWindowHeader .leftSide .input {
+  position: relative;
+  width: 80%;
+  height: 50%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+body .mainWindow .mainWindowHeader .rightSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  height: 100%;
+}
+
+body .mainWindow .mainWindowHeader .rightSide .divAlert {
+  width: 45%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.096);
+  margin-right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .mainWindow .mainWindowHeader .rightSide .divAlert .divAlertBtn {
+  position: relative;
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+body .mainWindow .mainWindowHeader .rightSide .button {
+  float: right;
+  width: 13%;
+  height: 60%;
+  background-color: black;
+  color: snow;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: .4%;
+  margin-right: 2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+body .mainWindow .mainWindowHeader .rightSide .button .button-text {
+  font-size: 14px;
+}
+
+body .mainWindow .flexbox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 93%;
+}
+
+body .mainWindow .flexbox .notesClasses {
+  width: 30%;
+  height: 100%;
+  border-right: 1px solid rgba(128, 128, 128, 0.521);
+}
+
+body .mainWindow .flexbox .notesInputField {
+  width: 70%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.089);
+}
+
+body .newDiv {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.534);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .newInputField {
+  width: 99%;
+  height: 99%;
+  border: none;
+  font-size: 15px;
+  z-index: -100;
+  resize: none;
+}
+
+body .newInputField:focus {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

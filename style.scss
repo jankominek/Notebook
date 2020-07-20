@@ -1,0 +1,121 @@
+body{
+    margin:0;
+    padding:0;
+    position: relative;
+    .mainWindow{
+        width: 70vw;
+        height: 70vh;
+        margin-left: 15vw;
+        margin-top: 15vh;
+        border: 1px solid black;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        .mainWindowHeader{
+            width: 100%;
+            height: 7%;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.521);
+                .leftSide{
+                    float: left;
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .input{
+                        position: relative;
+                        width: 80%;
+                        height: 50%;  
+                        border: none;
+                        border-bottom: 1px solid black;
+                        //background-color: rgba(128, 128, 128, 0.199);
+                    }
+                }
+                .rightSide{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: 70%;
+                    height: 100%;
+                    .divAlert{
+                        width: 45%;
+                        height: 100%;
+                        background-color: rgba(128, 128, 128, 0.096);
+                        margin-right: 5%;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        position: relative;
+                        .divAlertBtn{
+                            position: relative;
+                            width: 25%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            cursor: pointer;
+                        }
+                    }
+                    .button{
+                        float: right;
+                        width: 13%;
+                        height: 60%;
+                        background-color: black;
+                        color: snow;
+                        border-radius: 50px;
+                        text-decoration: none;
+                        margin-top: .4%;
+                        margin-right: 2vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+                        .button-text{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            
+        }
+        .flexbox{
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 93%;
+            .notesClasses{
+                width: 30%;
+                height: 100%;
+                border-right: 1px solid rgba(128, 128, 128, 0.521);;
+            }
+            .notesInputField{
+                width: 70%;
+                height: 100%;
+                background-color: rgba(128, 128, 128, 0.089);
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+            }
+        }
+    }
+    .newDiv{
+        position: relative;
+        width: 100%;
+        height: 10%;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.534);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .newInputField{
+        width: 99%;
+        height: 99%;
+        border: none;
+        font-size: 15px;
+        z-index: -100;
+        resize: none;
+    }
+    .newInputField:focus{
+        outline: none;
+    }
+}
