@@ -141,6 +141,20 @@ body .mainWindow .flexbox .notesInputField {
   width: 70%;
   height: 100%;
   background-color: rgba(128, 128, 128, 0.089);
+  position: relative;
+}
+
+body .mainWindow .flexbox .notesInputField .textarea {
+  width: 99%;
+  height: 99%;
+  border: none;
+  font-size: 15px;
+  z-index: -100;
+  resize: none;
+}
+
+body .mainWindow .flexbox .notesInputField .textarea:focus {
+  outline: none;
 }
 
 body .newDiv {
@@ -157,18 +171,5 @@ body .newDiv {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-body .newInputField {
-  width: 99%;
-  height: 99%;
-  border: none;
-  font-size: 15px;
-  z-index: -100;
-  resize: none;
-}
-
-body .newInputField:focus {
-  outline: none;
 }
 /*# sourceMappingURL=style.css.map */

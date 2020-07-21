@@ -3,11 +3,10 @@ export default class addNote{
         title:null,
         dataText: null,
     }
-    constructor(title){
-        let divInputField = document.querySelector(".notesInputField")
+    constructor(title, dataText){
 
         this.state.title = title;
-        this.state.dataText = divInputField.value;
+        this.state.dataText = dataText;
         console.log('title: ', this.state.title)
         console.log('dataText: ', this.state.dataText)
     }

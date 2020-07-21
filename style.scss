@@ -92,9 +92,18 @@ body{
                 width: 70%;
                 height: 100%;
                 background-color: rgba(128, 128, 128, 0.089);
-                // display: flex;
-                // justify-content: center;
-                // align-items: center;
+                position: relative;
+                .textarea{
+                    width: 99%;
+                    height: 99%;
+                    border: none;
+                    font-size: 15px;
+                    z-index: -100;
+                    resize: none;
+                }
+                .textarea:focus{
+                    outline: none;
+                }
             }
         }
     }
@@ -106,16 +115,5 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .newInputField{
-        width: 99%;
-        height: 99%;
-        border: none;
-        font-size: 15px;
-        z-index: -100;
-        resize: none;
-    }
-    .newInputField:focus{
-        outline: none;
     }
 }

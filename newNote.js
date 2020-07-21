@@ -1,7 +1,7 @@
 export default class newNote{
     state = {
         title: null,
-        dataText: null
+        //dataText: null
     }
     constructor(noteField, inputValue){
         let divInputField = document.querySelector(".notesInputField")
@@ -17,12 +17,6 @@ export default class newNote{
         noteField.appendChild(elDiv)
 
         this.state.title = inputValue;
-
-        //creating text field
-        let inputText = document.createElement("TEXTAREA")
-        inputText.classList.add("newInputField")
-        divInputField.appendChild(inputText)
-        //this.state.dataText = inputText.value;
 
     }
 }

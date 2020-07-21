@@ -1,6 +1,6 @@
 import addNote from './addNote.js';
 import newNote from './newNote.js';
-//import saveAlert from './saveAlert.js'
+import saveAlert from './saveAlert.js'
 
 const newElement = document.getElementById("newElement");
 const noteField = document.querySelector(".notesClasses");
@@ -8,6 +8,7 @@ const inputTitle = document.querySelector(".input");
 const addElement = document.getElementById("addBtn")
 //const mainWindow = document.querySelector(".mainWindow")
 let divInputField = document.querySelector(".notesInputField")
+let textArea = document.querySelector(".textarea")
 
 let notes = new Array();
 let savedNotes = new Array();
@@ -26,17 +27,17 @@ newElement.addEventListener('click', function(){
         inputTitle.value = "";
     }
     else if(inputTitle != "" && clicked == 1){
-
+        new saveAlert();
     }
     console.log('clicked: ', clicked)
 })
 addElement.addEventListener('click', function(){
-    let addedNote = new addNote(notes[notes.length - 1].state.title)
+    let addedNote = new addNote(notes[notes.length - 1].state.title, textArea.value)
     savedNotes.push(addedNote);
+    clicked = 0;
+    textArea.value = "";
     console.log(savedNotes[0])
 })
-function write(){
-}
 
 
 
